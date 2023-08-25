@@ -1,0 +1,52 @@
+import turtle
+
+arkaplan=turtle.Screen()
+cizgi=turtle.Turtle()
+arkaplan.bgcolor("white")
+cizgi.shape("circle")
+cizgi.shapesize(2)
+cizgi.pensize(50)
+cizgi.speed(2)
+cizgi.color("black","black")
+
+def ciz():
+    cizgi.penup()
+    cizgi.setposition(-200,100)
+    cizgi.pendown()
+    cizgi.setposition(-200,-100)
+    cizgi.penup()
+    cizgi.setposition(-100,100)
+    cizgi.pendown()
+    cizgi.setposition(-100,-100)
+    cizgi.penup()
+    cizgi.setposition(-250,50)
+    cizgi.pendown()
+    cizgi.setposition(-50,50)
+    cizgi.penup()
+    cizgi.setposition(-250,-50)
+    cizgi.pendown()
+    cizgi.setposition(150,-50)
+    cizgi.penup()
+    cizgi.setposition(5,-125)
+    cizgi.pendown()
+    cizgi.setposition(150,-125)
+    cizgi.penup()
+    cizgi.setposition(225,-50)
+    cizgi.pendown()
+    cizgi.setposition(225,-50)
+    cizgi.penup()
+    cizgi.setposition(225,-125)
+    cizgi.pendown()
+    cizgi.setposition(225,-125)
+
+ciz()
+
+arkaplan.bgcolor("black")
+cizgi.color("white","white")
+
+ciz()
+
+cizgi.penup()
+cizgi.setposition(-550,350)
+
+cizgi.getscreen()._root.mainloop()
